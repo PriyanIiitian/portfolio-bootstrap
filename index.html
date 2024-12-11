@@ -1,0 +1,229 @@
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priyadharsan</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .hero-section {
+            background-image: url('./imge/profile.png'); 
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: right;
+            align-items: center;
+            text-align: right;
+        }
+        .hero-section h1 {
+            font-size: 4rem;
+            font-weight: bold;
+        }
+        .hero-section p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+        .hero-section a {
+            font-size: 1.2rem;
+            color: #fff;
+            background-color: #007bff;
+            padding: 12px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .hero-section a:hover {
+            background-color: #0056b3;
+        }
+
+        .about-section {
+            padding: 60px 0;
+            background-color: #f8f9fa;
+        }
+        .about-section h2 {
+            font-size: 3rem;
+            margin-bottom: 30px;
+        }
+        .about-section p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .projects-section {
+            padding: 80px 0;
+            background-color: #e9ecef;
+        }
+        .projects-section h2 {
+            font-size: 3rem;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+        .project-card {
+            transition: transform 0.3s;
+        }
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+        .project-card img {
+            max-height: 300px;
+            object-fit: cover;
+        }
+        .project-card .card-body {
+            text-align: center;
+        }
+
+        .contact-section {
+            padding: 60px 0;
+            background-color: #343a40;
+            color: white;
+        }
+        .contact-section h2 {
+            font-size: 3rem;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .contact-section form input, .contact-section form textarea {
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .contact-section button {
+            background-color: #28a745;
+            border: none;
+            color: white;
+            padding: 12px 30px;
+            font-size: 1.1rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-section button:hover {
+            background-color: #218838;
+        }
+
+        footer {
+            padding: 20px 0;
+            text-align: center;
+            background-color: #f8f9fa;
+        }
+        footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.5s ease-out;
+        }
+        .animate-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+
+    <section class="hero-section">
+        <h1>Hey,This is Priyan</h1>
+        <h4>A passionate Web Developer & Pythonista</h4>
+        <a href="#about">Learn More</a>
+    </section>
+
+
+    <section id="about" class="about-section text-center">
+        <div class="container">
+            <h2 class="animate-on-scroll">About Me</h2>
+            <p class="animate-on-scroll">I am a creative Web Developer and Pythonista with a strong background in frontend and backend development. My passion is to build websites that are not only functional but also visually appealing. I specialize in modern web technologies and enjoy working with clients to bring their vision to life.</p>
+        </div>
+    </section>
+
+
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="animate-on-scroll">My Projects</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card project-card animate-on-scroll">
+                        <img src="./imge/download.jpg" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Python Password checker </h5>
+                            <p class="card-text">A password checker designed to evaluate the strength and security of a password.</p>
+                            <a href="#" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-md-4">
+                    <div class="card project-card animate-on-scroll">
+                        <img src="./imge/789.png" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Construction Site</h5>
+                            <p class="card-text">A constuction site named Dream House Builders(DHB).</p>
+                            <a href="#" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+               
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="animate-on-scroll">Contact Me</h2>
+            <form action="#">
+                <div class="row">
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="email" class="form-control" placeholder="Your Email" required>
+                    </div>
+                </div>
+                <textarea class="form-control" placeholder="Your Message" rows="4" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    
+    <footer>
+        <p>&copy; 2024 Priyadharsan. All Rights Reserved. <br> <a href="https://www.instagram.com/priyaniiitiank/" target="_blank">Instagram</a> | <a href="https://www.linkedin.com/in/priyadharsan-nagarajan-500411322/" target="_blank">LinkedIn</a></p>
+    </footer>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        
+        const animateElements = document.querySelectorAll('.animate-on-scroll');
+        window.addEventListener('scroll', () => {
+            const viewportHeight = window.innerHeight;
+            animateElements.forEach((el) => {
+                const rect = el.getBoundingClientRect();
+                if (rect.top <= viewportHeight * 0.8) {
+                    el.classList.add('visible');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
